@@ -15,6 +15,16 @@
     @mixin-content;
   }
 }
+@define-mixin atXLarge {
+  @media (min-width: 1250px) {
+    @mixin-content;
+  }
+}
+@define-mixin atXXLarge {
+  @media (min-width: 1600px) {
+    @mixin-content;
+  }
+}
 
 @define-mixin clearfix {
   &::after {

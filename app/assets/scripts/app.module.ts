@@ -1,11 +1,21 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpModule} from '@angular/http';
+import {FormsModule} from '@angular/forms';
+import {routing} from './app.routing';
+import {RouterModule} from '@angular/router';
 
 import { AppComponent }  from './app.component';
+import { HomeComponent }  from './components/home/home.component';
+import { PagesComponent } from './components/pages/pages.component';
+import { QuoteComponent }  from './components/pages/quote/quote.component';
+import { TrackComponent }  from './components/pages/track/track.component';
+
+
 
 @NgModule({
-  imports:      [ BrowserModule ],
-  declarations: [ AppComponent ],
+  imports:      [ BrowserModule, HttpModule, RouterModule, routing ],
+  declarations: [ AppComponent, HomeComponent, PagesComponent, QuoteComponent, TrackComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

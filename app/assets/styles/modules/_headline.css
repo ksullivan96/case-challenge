@@ -1,0 +1,66 @@
+.headline {
+    &__heading {
+        display: none;
+
+        @mixin atLarge {
+            display: block;
+        }
+    }
+    @mixin atLarge {
+        max-height: 100vh;
+        width: 300px;
+        position: absolute;
+        top: 65%;
+        transform: translate(-4.5%, -65%);
+        right: 4.5%;        
+    }
+    @mixin atXLarge {
+        transform: translate(-15%, -65%);
+        right: 15%;   
+    }
+    @mixin atXXLarge {
+        transform: translate(-225px, -65%);
+        right: 225px;   
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+    span {
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 2.5%;
+    }
+    .hr {
+        width: 40%;
+        display: inline-block;
+        height: 0px;
+        margin: 0px;
+        border-bottom: 1px solid #fff;
+        font-size: 1px;
+        margin-bottom: 6px;
+    }
+    &__section {
+        margin: 20px auto 0 auto;
+        padding-top: 30px;
+        max-width: 300px;
+        min-width: 300px;
+        @mixin atLarge {
+            margin: 0;
+            padding-top: 0;
+        }
+    }
+    &__or {
+        margin: 0 auto;
+        width: 100%;
+    }    
+}

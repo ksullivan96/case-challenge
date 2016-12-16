@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   moduleId: module.id,
-  selector: 'my-app',
-  templateUrl: 'app.component.html',
+  selector: 'pages',
+  templateUrl: 'pages.component.html',
 })
-export class AppComponent  { 
+export class PagesComponent  { 
   
   constructor() {
 

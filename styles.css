@@ -459,3 +459,398 @@ template {
 [hidden] {
   display: none;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6ed8ff;
+    color: #fff;
+}
+
+.box  {
+width: 400px;
+height: 400px;
+text-align: center;
+position:relative;
+margin: 0 auto;
+}
+
+.box img {
+  opacity: 0.3;
+  position: absolute;
+  top: 280px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50%;
+}
+
+.box__heading {
+  position: absolute;
+  top: 295px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 100;
+}
+
+.box__heading h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.box__heading h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+@media (min-width: 1010px) {
+
+  .box__heading {
+    display: none;
+  }
+}
+
+@media (min-width: 1010px) {
+
+  .box {
+    position: absolute;
+    opacity: 1;
+    display: block;
+    max-height: 100vh;
+    width: 564px;
+    top: 50%;
+    -webkit-transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
+    left: 5%;
+  }
+
+  .box img {
+    width: 100%;
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+
+  .box {
+    left: 25%;
+    -webkit-transform: translate(-30%,-50%);
+            transform: translate(-30%,-50%);
+  }
+}
+
+.form {
+    
+}
+
+.headline__heading {
+  display: none;
+}
+
+@media (min-width: 1010px) {
+
+  .headline__heading {
+    display: block;
+  }
+}
+
+@media (min-width: 1010px) {
+
+  .headline {
+    max-height: 100vh;
+    width: 300px;
+    position: absolute;
+    top: 65%;
+    -webkit-transform: translate(-4.5%, -65%);
+            transform: translate(-4.5%, -65%);
+    right: 4.5%;
+  }
+}
+
+@media (min-width: 1250px) {
+
+  .headline {
+    -webkit-transform: translate(-15%, -65%);
+            transform: translate(-15%, -65%);
+    right: 15%;
+  }
+}
+
+@media (min-width: 1600px) {
+
+  .headline {
+    -webkit-transform: translate(-225px, -65%);
+            transform: translate(-225px, -65%);
+    right: 225px;
+  }
+}
+
+.headline h1 {
+  font-size: 3.5rem;
+  margin: 0;
+}
+
+.headline h2 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.headline span {
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 2.5%;
+}
+
+.headline .hr {
+  width: 40%;
+  display: inline-block;
+  height: 0px;
+  margin: 0px;
+  border-bottom: 1px solid #fff;
+  font-size: 1px;
+  margin-bottom: 6px;
+}
+
+.headline__section {
+  margin: 20px auto 0 auto;
+  padding-top: 30px;
+  max-width: 300px;
+  min-width: 300px;
+}
+
+@media (min-width: 1010px) {
+
+  .headline__section {
+    margin: 0;
+    padding-top: 0;
+  }
+}
+
+.headline__or {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.btn {
+  color: #FFF;
+  text-decoration: none;
+  padding: .75rem 1.2rem;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.btn--headline {
+  display: block;
+  border: 1px solid #fff;
+  margin: 20px 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.25rem;
+  min-width: 250px;
+}
+
+.btn--headline:hover,
+      .btn--headline:focus {
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.btn--green {
+  border: none;
+  background-color: #3cc283;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.btn--green:hover,
+      .btn--green:focus {
+  background-color: #33cc99;
+}
+
+.btn--orange {
+  border: none;
+  background-color: #f36326;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.4);
+}
+
+.btn--orange:hover,
+      .btn--orange:focus {
+  background-color: #ff6633;
+}
+
+.site-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 160px;
+    background-color: #41c9fd;
+
+}
+
+@media (min-width: 1010px) {
+
+  .site-header {
+    min-width: 300px;
+    position: absolute;
+    right: 4.5%;
+    -webkit-transform: translateX(-4.5%);
+            transform: translateX(-4.5%);
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 1250px) {
+
+  .site-header {
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
+    right: 15%;
+  }
+}
+
+@media (min-width: 1600px) {
+
+  .site-header {
+    -webkit-transform: translateX(-225px);
+            transform: translateX(-225px);
+    right: 225px;
+  }
+}
+
+.site-header__heading {
+  text-align: center;
+}
+
+.site-header__heading h1 {
+  font-weight: 100;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1010px) {
+
+  .site-header__heading h1 {
+    padding-top: 10px;
+  }
+}
+
+.site-header__heading h2 {
+  font-weight: 100;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+@media (min-width: 1010px) {
+
+  .site-header__heading h2 {
+    font-size: 0.875rem;
+  }
+}
+
+.site-header__photo {
+  background-image: url("../../app/assets/images/ruan-logo.jpg");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto;
+  border:  10px solid #41c9fd;
+  border-radius: 65px;
+  position: relative;
+  bottom: 15px;
+  max-height: auto;
+  max-width: auto;
+}
+
+@media (min-width: 1010px) {
+
+  .site-header__photo {
+    bottom: -5px;
+  }
+}
+
+.page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #6ed8ff;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.page-header__heading {
+  text-align: center;
+  width: 450px;
+  background-color: #41c9fd;
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+
+.page-header__heading h1 {
+  font-weight: 100;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1010px) {
+
+  .page-header__heading h1 {
+    padding-top: 10px;
+  }
+}
+
+.page-header__heading h2 {
+  font-weight: 100;
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+@media (min-width: 1010px) {
+
+  .page-header__heading h2 {
+    font-size: 0.875rem;
+  }
+}
+
+.page-header__photo {
+  background-image: url("../../app/assets/images/ruan-logo.jpg");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  left: 15px;
+  top: 5px;
+  border:  10px solid #41c9fd;
+  border-radius: 65px;
+  position: absolute;
+  max-height: auto;
+  max-width: auto;
+}
+
+@media (min-width: 1010px) {
+
+  .page-header__photo {
+    bottom: -5px;
+  }
+}
+

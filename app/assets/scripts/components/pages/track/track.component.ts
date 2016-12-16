@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   moduleId: module.id,
-  selector: 'my-app',
-  templateUrl: 'app.component.html',
+  selector: 'track',
+  templateUrl: 'track.component.html',
 })
-export class AppComponent  { 
+export class TrackComponent  { 
   
   constructor() {
 
