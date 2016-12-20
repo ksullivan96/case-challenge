@@ -9,20 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var tracking_services_1 = require('./services/tracking.services');
-var AppComponent = (function () {
-    function AppComponent() {
+require('rxjs/add/operator/map');
+var TrackingService = (function () {
+    function TrackingService() {
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'my-app',
-            templateUrl: 'app.component.html',
-            providers: [tracking_services_1.TrackingService]
-        }), 
+    TrackingService = __decorate([
+        core_1.Injectable(), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], TrackingService);
+    return TrackingService;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.TrackingService = TrackingService;
+//# sourceMappingURL=tracking.services.js.map

@@ -1,0 +1,62 @@
+.note-card {
+    max-width: 420px;
+    width: 95%;
+    background-color: #fff;
+    height: 550px;
+    margin: 0 auto;
+    position: relative;    
+    margin-top: 50px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.3);
+    transform: scale(0);
+    opacity: 0;
+    animation: noteCard 2s 1;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+    transition: height 0.4s ease-out;
+
+    &--track {
+        height: 225px;
+    }
+    &__heading-indent {
+        padding-left: 10px;
+    }
+    &__tracking-info {
+        opacity: 0;
+        animation: trackingInfo 2s 1;
+        animation-delay: 2.35s;
+        animation-fill-mode: forwards;
+    }
+
+    h3,
+    h4{
+        color: #046f93;
+        text-align: left;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-weight: 600;
+        font-size: 0.9375rem;
+        letter-spacing: 0.125rem;
+    }
+    h4 {
+        margin: 0;
+        margin-bottom: -20px;
+        padding-left: 2px;
+        padding: 0;
+        font-size: 0.5rem;
+        letter-spacing: 0.0625rem;
+    }
+    label {
+        color: #046f93;
+        display: inline-block;
+        font-size: 0.5625rem;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+
+
+}

@@ -52,7 +52,14 @@ margin: 0 auto;
 
     }
     @mixin atXLarge {
+        animation: fadeIn 3s 1;
+        animation-fill-mode: forwards;
+        animation-delay: 0.1s;
         left: 25%;
         transform: translate(-30%,-50%);       
+    }
+    @mixin atXXLarge {
+        max-width: 570px;
+        min-width: 570px;
     }
 }

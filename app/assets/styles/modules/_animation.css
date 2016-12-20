@@ -1,0 +1,27 @@
+@keyframes fadeIn {
+    0%  { opacity: 0;  }
+    100% { opacity: 1;  }
+}
+@keyframes noteCard {
+    0%  { opacity: 0; transform: scale(0) ;  }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes scaleUp {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+    100% { transform: scale(1);; }
+}
+
+@keyframes loadingRing {
+    0% { display: none; }
+    25% {display: block; opacity: 1;}
+    50% {opacity: 1;}
+    75% {opacity: 1;}
+    100% {opacity: 0; display: none;}
+}
+
+@keyframes trackingInfo {
+    0% {opacity: 0; transform: scale(0);}
+    100% {opacity: 1; transform: scale(1);}
+}

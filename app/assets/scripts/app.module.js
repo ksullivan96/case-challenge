@@ -11,11 +11,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var http_1 = require('@angular/http');
+var forms_1 = require('@angular/forms');
 var app_routing_1 = require('./app.routing');
 var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./components/home/home.component');
-var pages_component_1 = require('./components/pages/pages.component');
+var header_component_1 = require('./components/pages/header/header.component');
 var quote_component_1 = require('./components/pages/quote/quote.component');
 var track_component_1 = require('./components/pages/track/track.component');
 var AppModule = (function () {
@@ -23,8 +24,8 @@ var AppModule = (function () {
     }
     AppModule = __decorate([
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, router_1.RouterModule, app_routing_1.routing],
-            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, pages_component_1.PagesComponent, quote_component_1.QuoteComponent, track_component_1.TrackComponent],
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule, forms_1.FormsModule, router_1.RouterModule, app_routing_1.routing],
+            declarations: [app_component_1.AppComponent, home_component_1.HomeComponent, header_component_1.HeaderComponent, quote_component_1.QuoteComponent, track_component_1.TrackComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])

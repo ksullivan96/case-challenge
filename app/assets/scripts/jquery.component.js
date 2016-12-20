@@ -8,21 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var tracking_services_1 = require('./services/tracking.services');
-var AppComponent = (function () {
-    function AppComponent() {
+var core_1 = require("@angular/core");
+var jQueryComponent = (function () {
+    function jQueryComponent() {
     }
-    AppComponent = __decorate([
+    jQueryComponent = __decorate([
         core_1.Component({
-            moduleId: module.id,
-            selector: 'my-app',
-            templateUrl: 'app.component.html',
-            providers: [tracking_services_1.TrackingService]
+            selector: "my-jquery",
+            template: "\n        <button>Click Me</button>\n    "
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], jQueryComponent);
+    return jQueryComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.jQueryComponent = jQueryComponent;
+//# sourceMappingURL=jquery.component.js.map

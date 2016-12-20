@@ -22,17 +22,29 @@
         transform: translate(-225px, -65%);
         right: 225px;   
     }
-
+    h1,
+    h2,
+    #quote,
+    #track,
+    #signup {
+        animation: fadeIn 3s 1;
+        animation-delay: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+    }
     h1 {
-        font-size: 3.5rem;
+        font-size: 3.625rem;
+        font-weight: 700;
+        letter-spacing: 0.125rem;
         margin: 0;
     }
-
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.375em;
         font-weight: 200;
         margin-top: 0;
         margin-bottom: 3rem;
+        animation-delay: 1.3s;
+
     }
     span {
         margin: 0 auto;
@@ -62,5 +74,14 @@
     &__or {
         margin: 0 auto;
         width: 100%;
-    }    
+    }
+    #quote {
+        animation-delay: 2.0s;
+    }
+    #track {
+        animation-delay: 2.3s;
+    }
+    #signup {
+        animation-delay: 2.6s;
+    }
 }

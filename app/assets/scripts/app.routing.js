@@ -1,12 +1,11 @@
 "use strict";
 var router_1 = require('@angular/router');
-var home_component_1 = require('./components/home/home.component');
 var quote_component_1 = require('./components/pages/quote/quote.component');
 var track_component_1 = require('./components/pages/track/track.component');
 var appRoutes = [
     {
         path: '',
-        component: home_component_1.HomeComponent
+        component: track_component_1.TrackComponent
     },
     {
         path: 'pages/get-a-quote',

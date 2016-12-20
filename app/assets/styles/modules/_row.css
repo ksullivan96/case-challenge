@@ -1,0 +1,129 @@
+.row {
+    max-width: 100%;
+    padding: 0 25px;
+
+    &-2 {
+        float: left;
+        width: 20%;
+        padding: 0;
+        h3 {
+            font-weight: 100;
+            color: #aea9a9;            
+        }
+
+        &--arrow {
+            transform: scale(0.8, 1.4);
+            transform-origin: 100% 0;
+            padding: 0;
+            padding-left: 60px;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+    }
+    &-3 {
+        float: left;
+        width: 25%;
+        padding: 5px;
+    }
+    &-4 {
+        float: left;
+        width: 33.33%;
+
+        &--check {
+            margin-top: -20px;
+        }
+    }
+    &-6 {
+        float: left;
+        width: 50%;
+        padding: 5px;
+    }
+    &-10 {
+        float: left;
+        width: 80%;
+        padding: 5px;
+    }
+    &-12 {
+        float: left;
+        width: 100%;
+        padding: 5px;
+        &-b {
+            padding: 0;
+            margin-left: 5px;
+            border-bottom: 3px solid #03668f;
+        }
+        &--next {
+            transform: translateX(-38%);
+
+            
+        }
+        &--quote {
+            margin-top: 30px;
+        }
+        &-s-heading {
+            padding: 0;
+            position: relative;
+            top: -5px;
+        }
+
+    }
+
+    input,
+    select {
+        max-width: 100%;
+        min-width: 100%;
+        border: none;
+        border-bottom: 3px solid #03668f;
+        margin: 5px;
+        height: 1.6rem;        
+        color: #aea9a9;
+        font-weight:300;
+        &:focus {
+            color: #03668f;
+        }
+    }
+    select:not([multiple]) {
+        
+}
+    select {
+        background-color: #fff;
+        border-radius: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-position: right 50%;
+        background-repeat: no-repeat;
+        background-image: url("../../app/assets/images/down-arrow.jpg");
+        padding-right: 1.5em;
+    }
+    .myCheckbox {
+        
+    }
+    
+    .myCheckbox input {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 2px;
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+    /*
+
+    .myCheckbox span {
+        margin-left: 2px;
+        margin-top: 2px;
+        width: 0.8rem;
+        height: 0.8rem;
+        display: inline-block;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        transition: all 0.2s ease-out;
+    }
+
+    .myCheckbox input:checked + span {
+        background-image: url("../../app/assets/images/checkbox.jpg");
+        background-size: contain;
+    }*/
+@mixin clearfix;
+
+}
+

@@ -12,10 +12,24 @@ var core_1 = require('@angular/core');
 var QuoteComponent = (function () {
     function QuoteComponent() {
     }
+    QuoteComponent.prototype.ngAfterViewInit = function () {
+        $(".focus")
+            .focusin(function () {
+            if ($(this).hasClass("n-btn")) {
+                $('.btn--next').addClass("btn--next-focus");
+            }
+            $(this).css("opacity", "1");
+        })
+            .focusout(function () {
+            $(this).css("opacity", "0.6");
+            $("div a").removeClass("btn--next-focus");
+        });
+    };
+    ;
     QuoteComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'quote',
+            selector: 'quoute',
             templateUrl: 'quote.component.html',
         }), 
         __metadata('design:paramtypes', [])

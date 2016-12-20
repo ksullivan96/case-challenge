@@ -9,16 +9,43 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var tracking_services_1 = require('../../../services/tracking.services');
 var TrackComponent = (function () {
-    function TrackComponent() {
+    function TrackComponent(_trackingService) {
+        this._trackingService = _trackingService;
     }
+    TrackComponent.prototype.ngOnInit = function () {
+        this.isTracking = false;
+    };
+    TrackComponent.prototype.ngAfterViewInit = function () {
+        $(".focus")
+            .focusin(function () {
+            $(this).css("opacity", "1");
+        })
+            .focusout(function () {
+            $(this).css("opacity", "0.6");
+        });
+    };
+    ;
+    TrackComponent.prototype.checkLength = function () {
+        this.isSubmit = (this.trackingNumber.length == 5) ? true : false;
+        if (this.trackingNumber.length != 5) {
+            this.isTracking = false;
+        }
+    };
+    TrackComponent.prototype.trackShipment = function () {
+        (this.isSubmit) ? this.isTracking = !this.isTracking : this.isTracking;
+        if (this.isTracking) {
+            var trackNumber = this.trackingNumber;
+        }
+    };
     TrackComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'track',
             templateUrl: 'track.component.html',
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [tracking_services_1.TrackingService])
     ], TrackComponent);
     return TrackComponent;
 }());

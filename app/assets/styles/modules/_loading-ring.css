@@ -1,0 +1,13 @@
+.loading-ring {
+    opacity: 0;
+    background-image: url("../../app/assets/images/loading-ring.svg");
+    background-position: center;
+    background-size: contain;
+    height: 120px;
+    width: 120px;
+    animation: loadingRing 3s 1;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+
+
+}

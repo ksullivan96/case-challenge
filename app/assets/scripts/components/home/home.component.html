@@ -1,35 +1,37 @@
-<div class="site-header">
-    <div class="site-header__heading">
-        <h1>uncle bob's trucking</h1>
-        <h2>1.888.654.9876</h2>
-        <span> | </span>
-        <h2>unclebobs.com</h2>
+<div style="background-color: #6ed8ff" class="container">
+    <div class="site-header">
+        <div class="site-header__heading">
+            <h1>uncle bob's trucking</h1>
+            <h2>1.888.654.9876</h2>
+            <span> | </span>
+            <h2>unclebobs.com</h2>
+        </div>
+        <div class="site-header__photo">
+        </div>
     </div>
-    <div class="site-header__photo">
-    </div>
-</div>
 
-<div class="box">
-    <img src="app/assets/images/pallet-box.svg" />
-    <div class="box__heading">
+    <div class="box">
+        <img src="app/assets/images/pallet-box.svg" />
+        <div class="box__heading">
+            <h1>Hello.</h1>
+            <h2>Let's get started.</h2>
+        </div>
+    </div>
+
+    <div class="headline">
+        <div class="headline__heading">
         <h1>Hello.</h1>
         <h2>Let's get started.</h2>
-    </div>
-</div>
-
-<div class="headline">
-    <div class="headline__heading">
-    <h1>Hello.</h1>
-    <h2>Let's get started.</h2>
-    </div>
-    <div class="headline__section">
-        <a class="btn btn--orange btn--headline" href="#">Get Quote</a>
-        <a class="btn btn--green btn--headline" href="#">Track shipment</a>
-        <div class="headline__or">
-            <div class="hr"></div>
-            <span>or</span>
-            <div class="hr"></div>
         </div>
-        <a class="btn btn--headline" href="#">Sign In</a>
+        <div class="headline__section">
+            <a id="quote" class="btn btn--orange btn--headline" routerLink="pages/get-a-quote">Get Quote</a>
+            <a id="track" class="btn btn--green btn--headline" routerLink="pages/track-a-shipment">Track shipment</a>
+            <div id="signup"class="headline__or">
+                <div class="hr"></div>
+                <span>or</span>
+                <div class="hr"></div>
+            </div>
+            <a id="signup"class="btn btn--headline" href="#">Sign In</a>
+        </div>
     </div>
 </div>

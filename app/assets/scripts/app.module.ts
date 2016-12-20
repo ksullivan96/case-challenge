@@ -7,15 +7,16 @@ import {RouterModule} from '@angular/router';
 
 import { AppComponent }  from './app.component';
 import { HomeComponent }  from './components/home/home.component';
-import { PagesComponent } from './components/pages/pages.component';
+import { HeaderComponent } from './components/pages/header/header.component';
 import { QuoteComponent }  from './components/pages/quote/quote.component';
 import { TrackComponent }  from './components/pages/track/track.component';
 
 
 
+
 @NgModule({
-  imports:      [ BrowserModule, HttpModule, RouterModule, routing ],
-  declarations: [ AppComponent, HomeComponent, PagesComponent, QuoteComponent, TrackComponent],
+  imports:      [ BrowserModule, HttpModule, FormsModule, RouterModule, routing ],
+  declarations: [ AppComponent, HomeComponent, HeaderComponent, QuoteComponent, TrackComponent],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
