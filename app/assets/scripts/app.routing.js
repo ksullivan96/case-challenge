@@ -5,7 +5,7 @@ var track_component_1 = require('./components/pages/track/track.component');
 var appRoutes = [
     {
         path: '',
-        component: track_component_1.TrackComponent
+        component: quote_component_1.QuoteComponent
     },
     {
         path: 'pages/get-a-quote',

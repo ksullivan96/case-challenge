@@ -22,7 +22,7 @@
     }
     &__tracking-info {
         opacity: 0;
-        animation: trackingInfo 2s 1;
+        animation: fadeIn 1s 1;
         animation-delay: 2.35s;
         animation-fill-mode: forwards;
     }

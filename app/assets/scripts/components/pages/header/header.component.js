@@ -12,6 +12,15 @@ var core_1 = require('@angular/core');
 var HeaderComponent = (function () {
     function HeaderComponent() {
     }
+    HeaderComponent.prototype.ngAfterViewInit = function () {
+        $(".page-header__menu-icon").click(this.toggleTheMenu.bind(this));
+    };
+    HeaderComponent.prototype.toggleTheMenu = function () {
+        $(".page-header__menu-content").toggleClass("page-header__menu-content--is-visible");
+        $(".page-header").toggleClass("page-header--is-expanded");
+        $(".page-header__menu-icon").toggleClass("page-header__menu-icon--close-x");
+        $(".page-header__heading").toggleClass("page-header__heading--is-expanded");
+    };
     HeaderComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
