@@ -9,7 +9,7 @@ import { TrackComponent }  from './components/pages/track/track.component';
 const appRoutes: Routes = [
     {
         path:'',
-        component:QuoteComponent
+        component:HomeComponent
     },
 	{
 		path:'pages/get-a-quote',

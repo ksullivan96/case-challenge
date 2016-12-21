@@ -20,7 +20,7 @@
                     
                 </div>
 
-                <div class="focus n-btn">
+                <form #shippingForm="ngForm" class="focus n-btn">
                     <div class="row-12">
                         <h3>2. Item details</h3>
                     </div>
@@ -28,7 +28,7 @@
                         
                         <div class="row-12row-12__circle-check">
                             <h4>Item Type</h4>
-                            <div *ngIf="checkTwo" class="check">
+                            <div [hidden]="!shippingForm.form.valid" class="check">
                                 <p>&#10003;</p>
                             </div>
                         </div>
@@ -38,13 +38,13 @@
                         </select>
                     </div>
                         <div class="row-3">
-                            <input type="text" placeholder="Length">
+                            <input type="text" required [(ngModel)]="length" name="length" placeholder="Length">
                         </div>
                         <div class="row-3">
-                            <input type="text" placeholder="Width">
+                            <input type="text" required [(ngModel)]="width" name="width" placeholder="Width">
                         </div>
                         <div class="row-3">
-                            <input type="text" placeholder="Height">
+                            <input type="text" required [(ngModel)]="height " name="height" placeholder="Height">
                         </div>
                         <div class="row-3">
                             <div class="row-12 row-12-s-heading">
@@ -58,16 +58,16 @@
                         </select>
                         </div>
                         <div class="row-6">
-                            <input type="text" placeholder="Weight">                        
+                            <input required [(ngModel)]="weight" type="text" name="weight" placeholder="Weight">                        
                         </div>
                         <div class="row-3">
-                            <input type="text" placeholder="Class">                        
+                            <input type="text" required [(ngModel)]="class" name="class" placeholder="Class">                        
                         </div>
                         <div class="row-3">
                             <div class="row-12 row-12-s-heading">
                                 <h4>qty</h4>
                             </div>
-                            <input type="number" placeholder="0">
+                            <input type="number" required [(ngModel)]="quantity" name="quantity" placeholder="0">
                         </div>
                         <div class="row__section row__checkbox">
                             <div class="row-4 row-4--check">
@@ -100,7 +100,7 @@
                     <div class="row-12">
                         <div class="row-12-b"></div>
                     </div>
-                </div>
+                </form>
                 <div class="hover">
                     <div class="row-10">
                         <h3>3. additional services</h3>

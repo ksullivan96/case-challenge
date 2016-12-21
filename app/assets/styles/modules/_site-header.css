@@ -30,7 +30,7 @@
         text-align: center;
         h1 {
             font-weight: 600;
-            font-size: 0.9375rem;
+            font-size: 1rem;
             text-transform: uppercase;
             @mixin atLarge {
                 padding-top: 20px;

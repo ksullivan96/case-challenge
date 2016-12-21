@@ -11,6 +11,14 @@ export class QuoteComponent implements OnInit, AfterViewInit {
   shippingDate: any;
   checkOne: boolean;
   checkTwo: boolean;
+  isFormComplete: boolean;
+  length: number;
+  width:number;
+  height: number;
+  class: any;
+  weight: number;
+  quantity: number;
+
   constructor() {
   }
 
@@ -34,11 +42,12 @@ export class QuoteComponent implements OnInit, AfterViewInit {
     validateShipping() {
       let validate = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
       if (validate.test(this.shippingDate)) {
-        console.log("Correct format");
         this.checkOne = true;
-      } else {
-        console.log("Enter Correct format");
-        console.log(this.shippingDate);
+      }
+    }
+    validateInfo() {
+      if(this.isFormComplete) {
+        this.checkTwo = true;
       }
     }
   }
