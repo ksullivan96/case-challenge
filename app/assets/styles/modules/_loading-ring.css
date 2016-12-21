@@ -10,3 +10,15 @@
     animation-fill-mode: forwards;
     margin-top: -80px;
 }
+.loading-ring__main {
+    background-image: url("../../app/assets/images/main-ring.svg");
+    background-position: center;
+    background-size: contain;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+
+}

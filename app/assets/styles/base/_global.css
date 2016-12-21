@@ -3,5 +3,6 @@
     font-family: 'Raleway', sans-serif;
 }
 body {
+    background-color: $blueBackground;
     color: #fff;
 }

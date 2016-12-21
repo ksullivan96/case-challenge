@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="focus">
                     <div class="row-10">
-                        <h3>1. Location and Date</h3>
+                        <h3 [ngClass]="{'completed': checkOne}">1. Location and Date</h3>
                     </div>
                     <div class="row-2">
                         <h3 class="row-2 row-2--arrow">></h3>
@@ -15,7 +15,7 @@
                         <div *ngIf="checkOne" class="check">
                             <p>&#10003;</p>
                         </div>
-                        <input (keyup)="validateShipping()" [(ngModel)]="shippingDate" type="text" placeholder="12/12/2016: 72758 to 72701">
+                        <input class="secondary-input" (keyup)="validateShipping()" [(ngModel)]="shippingDate" type="text" placeholder="12/12/2016: 72758 to 72701">
                     </div>
                     
                 </div>

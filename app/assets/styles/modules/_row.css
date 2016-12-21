@@ -80,63 +80,6 @@
         }
 
     }
-
-    input,
-    select {
-        max-width: 100%;
-        min-width: 100%;
-        border: none;
-        border-bottom: 3px solid #03668f;
-        margin: 5px;
-        height: 1.6rem;        
-        color: #aea9a9;
-        font-weight:300;
-        &:focus {
-            color: #03668f;
-        }
-    }
-
-    select {
-        background-color: #fff;
-        border-radius: 0;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        background-position: right 50%;
-        background-repeat: no-repeat;
-        background-image: url("../../app/assets/images/down-arrow.jpg");
-        padding-right: 1.5em;
-    }
-    .select--t-margin {
-        margin-top: 20px;
-    }
-    .myCheckbox {
-        
-    }
-    
-    .myCheckbox input {
-        display: inline-block;
-        margin-top: 20px;
-        margin-left: 2px;
-        width: 0.7rem;
-        height: 0.7rem;
-    }
-    /*
-
-    .myCheckbox span {
-        margin-left: 2px;
-        margin-top: 2px;
-        width: 0.8rem;
-        height: 0.8rem;
-        display: inline-block;
-        background-color: #fff;
-        border: 1px solid rgba(0, 0, 0, 0.4);
-        transition: all 0.2s ease-out;
-    }
-
-    .myCheckbox input:checked + span {
-        background-image: url("../../app/assets/images/checkbox.jpg");
-        background-size: contain;
-    }*/
 @mixin clearfix;
 
 }

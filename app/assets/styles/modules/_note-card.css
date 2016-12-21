@@ -27,10 +27,12 @@
         animation-delay: 2.65s;
         animation-fill-mode: forwards;
     }
-
+    .completed {
+        color: $mainGreen;
+    }
     h3,
     h4{
-        color: #046f93;
+        color: $textBlue;
         text-align: left;
         margin-bottom: 0;
         text-transform: uppercase;
@@ -49,7 +51,7 @@
         letter-spacing: 0.0625rem;
     }
     label {
-        color: #046f93;
+        color: $textBlue;
         display: inline-block;
         font-size: 0.5625rem;
         text-align: left;

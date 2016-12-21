@@ -20,6 +20,7 @@ export class QuoteComponent implements OnInit, AfterViewInit {
   quantity: number;
 
   constructor() {
+    
   }
 
   ngOnInit() {
@@ -32,11 +33,10 @@ export class QuoteComponent implements OnInit, AfterViewInit {
         if ($(this).hasClass("n-btn")) {
           $('.btn--next').addClass("btn--next-focus");          
         }
-        $(this).css("opacity", "1");
+        $(this).toggleClass("focus__focusOn");
       })
       .focusout(function () {
-        $(this).css("opacity", "0.6");
-        $("div a").removeClass("btn--next-focus");
+        $(this).toggleClass("focus__focusOn");
       });
     };
     validateShipping() {

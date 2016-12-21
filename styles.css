@@ -466,6 +466,7 @@ template {
 }
 
 body {
+    background-color: #6ed8ff;
     color: #fff;
 }
 
@@ -594,9 +595,69 @@ margin: 0 auto;
   }
 }
 
-.form {
-    
+input,
+select {
+        max-width: 100%;
+        min-width: 100%;
+        border: none;
+        border-bottom: 3px solid #03668f;
+        margin: 5px;
+        height: 1.6rem;        
+        color: #aea9a9;
+        font-weight:300;
+    }
+
+input:focus, select:focus {
+  color: #03668f;
 }
+
+.secondary-input {
+        border-bottom: 1px solid grey;
+    }
+
+select {
+        background-color: #fff;
+        border-radius: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-position: right 50%;
+        background-repeat: no-repeat;
+        background-image: url("../../app/assets/images/down-arrow.jpg");
+        padding-right: 1.5em;
+    }
+
+.select--t-margin {
+        margin-top: 20px;
+    }
+
+.myCheckbox {
+        
+    }
+
+.myCheckbox input {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 2px;
+        width: 0.7rem;
+        height: 0.7rem;
+    }
+
+/*
+    .myCheckbox span {
+        margin-left: 2px;
+        margin-top: 2px;
+        width: 0.8rem;
+        height: 0.8rem;
+        display: inline-block;
+        background-color: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        transition: all 0.2s ease-out;
+    }
+
+    .myCheckbox input:checked + span {
+        background-image: url("../../app/assets/images/checkbox.jpg");
+        background-size: contain;
+    }*/
 
 .headline__heading {
   display: none;
@@ -836,11 +897,8 @@ margin: 0 auto;
 }
 
 @media (min-width: 1010px) {
-
-  .btn--quote {
-    margin-top: 0;
-  }
-}
+        
+    }
 
 .site-header {
     position: absolute;
@@ -855,6 +913,7 @@ margin: 0 auto;
 @media (min-width: 1010px) {
 
   .site-header {
+    opacity: 0;
     -webkit-animation: fadeIn 3s 1;
             animation: fadeIn 3s 1;
     -webkit-animation-fill-mode: forwards;
@@ -950,7 +1009,7 @@ margin: 0 auto;
     left: 0;
     width: 100%;
     height: 80px;
-    background-color: #41c9fd;
+    background-color: #6ed8ff;
     box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
     z-index: 10000;
     -webkit-transition: all 0.3s ease-out;
@@ -970,6 +1029,7 @@ margin: 0 auto;
 }
 
 .page-header__heading {
+  background-color: #41c9fd;
   opacity: 1;
   text-align: center;
   width: 100%;
@@ -1209,12 +1269,12 @@ margin: 0 auto;
 }
 
 @media (min-width: 1010px) {
-    
-}
+        
+    }
 
 @media (min-width: 1250px) {
-    
-}
+        
+    }
 
 @media (min-width: 1600px) {
 
@@ -1327,67 +1387,6 @@ margin: 0 auto;
   top: -5px;
 }
 
-.row input,
-    .row select {
-  max-width: 100%;
-  min-width: 100%;
-  border: none;
-  border-bottom: 3px solid #03668f;
-  margin: 5px;
-  height: 1.6rem;
-  color: #aea9a9;
-  font-weight:300;
-}
-
-.row input:focus, .row select:focus {
-  color: #03668f;
-}
-
-.row select {
-  background-color: #fff;
-  border-radius: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-position: right 50%;
-  background-repeat: no-repeat;
-  background-image: url("../../app/assets/images/down-arrow.jpg");
-  padding-right: 1.5em;
-}
-
-.row .select--t-margin {
-  margin-top: 20px;
-}
-
-.row .myCheckbox {
-    
-}
-
-.row .myCheckbox input {
-  display: inline-block;
-  margin-top: 20px;
-  margin-left: 2px;
-  width: 0.7rem;
-  height: 0.7rem;
-}
-
-/*
-
-    .myCheckbox span {
-        margin-left: 2px;
-        margin-top: 2px;
-        width: 0.8rem;
-        height: 0.8rem;
-        display: inline-block;
-        background-color: #fff;
-        border: 1px solid rgba(0, 0, 0, 0.4);
-        transition: all 0.2s ease-out;
-    }
-
-    .myCheckbox input:checked + span {
-        background-image: url("../../app/assets/images/checkbox.jpg");
-        background-size: contain;
-    }*/
-
 .row::after {
   content: "";
   clear: both;
@@ -1437,6 +1436,10 @@ margin: 0 auto;
           animation-fill-mode: forwards;
 }
 
+.note-card .completed {
+  color: #3cc283;
+}
+
 .note-card h3,
     .note-card h4{
   color: #046f93;
@@ -1471,13 +1474,13 @@ margin: 0 auto;
   font-weight: 800;
 }
 
-.focus {
+.focus{
     opacity: 0.4;
     -webkit-transition: opacity 0.3s ease-out;
     transition: opacity 0.3s ease-out;
 }
 
-.focus:focus {
+.focus__focusOn {
   opacity: 1;
 }
 
@@ -1565,6 +1568,20 @@ margin: 0 auto;
     margin-top: -80px;
 }
 
+.loading-ring__main {
+    background-image: url("../../app/assets/images/main-ring.svg");
+    background-position: center;
+    background-size: contain;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+
+}
+
 .check {
     position: absolute;
     left: -35px;
@@ -1616,8 +1633,8 @@ margin: 0 auto;
 }
 
 .table th {
-    
-}
+        
+    }
 
 .table__col-header {
   text-indent: 20px;
