@@ -12,7 +12,7 @@
     animation: noteCard 2s 1;
     animation-delay: 0.3s;
     animation-fill-mode: forwards;
-    transition: height 0.4s ease-out;
+    transition: all 0.4s ease-out;
 
     &--track {
         height: 225px;
@@ -21,9 +21,10 @@
         padding-left: 10px;
     }
     &__tracking-info {
+        height: 0;
         opacity: 0;
-        animation: fadeIn 1s 1;
-        animation-delay: 2.35s;
+        animation: fadeInDisplay 1s 1;
+        animation-delay: 2.65s;
         animation-fill-mode: forwards;
     }
 

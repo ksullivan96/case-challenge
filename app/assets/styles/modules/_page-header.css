@@ -23,15 +23,22 @@
         position: absolute;
         height: 80px;
         top: 0;
-        left: 0;
+        left: 10px;
         transition: opacity 0.3s ease-out;
+        @mixin atSmall {
+            left: 0;
+        }
         @mixin atLarge {
             width: 450px;
         }
         h1 {
-            font-weight: 100;
-            font-size: 1.2rem;
+            font-weight: 600;
+            font-size: .95rem;
             text-transform: uppercase;
+
+            @mixin atSmall {
+                font-size: 1.2rem;
+            }
             @mixin atLarge {
                 padding-top: 10px;
             }
@@ -39,8 +46,11 @@
         h2 {
             font-weight: 100;
             display: inline-block;
-            font-size: 1rem;
+            font-size: 0.85rem;
             margin-top: 0;
+            @mixin atSmall {
+                font-size: 1rem;
+            }
             @mixin atLarge {
                 font-size: 0.875rem;
             }
@@ -59,7 +69,10 @@
         position: absolute;
         z-index: 10;
         top: 30px;
-        right: 25px;
+        right: 10px;
+        @mixin atSmall {
+            right: 25px;
+        }
 
         &::before {
         content: "";
@@ -126,13 +139,16 @@
         width: 60px;
         height: 60px;
         margin: 0 auto;
-        left: 15px;
+        left: 5px;
         top: 10px;
         border-radius: 30px;
         position: absolute;
         max-height: auto;
         max-width: auto;
         transition: all .5s ease-out;
+        @mixin atSmall {
+            left: 15px;
+        }
 
         @mixin atLarge {
             bottom: -5px;

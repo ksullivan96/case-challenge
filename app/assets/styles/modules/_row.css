@@ -31,6 +31,18 @@
 
         &--check {
             margin-top: -20px;
+            width: 100%;
+            &:nth-of-type(1),
+            &:nth-of-type(2) {
+                width: 50%;
+            }
+            @mixin atXSmall {
+                width: 33%;
+                &:nth-of-type(1),
+                &:nth-of-type(2) {
+                    width: 33.33%;
+                }
+            }
         }
     }
     &-6 {
@@ -53,9 +65,10 @@
             border-bottom: 3px solid #03668f;
         }
         &--next {
-            transform: translateX(-38%);
-
-            
+            transform: translateX(-38%); 
+        }
+        &__circle-check {
+            position: relative;
         }
         &--quote {
             margin-top: 30px;
@@ -82,9 +95,7 @@
             color: #03668f;
         }
     }
-    select:not([multiple]) {
-        
-}
+
     select {
         background-color: #fff;
         border-radius: 0;
@@ -94,6 +105,9 @@
         background-repeat: no-repeat;
         background-image: url("../../app/assets/images/down-arrow.jpg");
         padding-right: 1.5em;
+    }
+    .select--t-margin {
+        margin-top: 20px;
     }
     .myCheckbox {
         

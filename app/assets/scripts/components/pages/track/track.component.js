@@ -34,9 +34,11 @@ var TrackComponent = (function () {
         }
     };
     TrackComponent.prototype.trackShipment = function () {
-        (this.isSubmit) ? this.isTracking = !this.isTracking : this.isTracking;
         if (this.isTracking) {
             var trackNumber = this.trackingNumber;
+        }
+        else {
+            (this.isSubmit) ? this.isTracking = !this.isTracking : this.isTracking;
         }
     };
     TrackComponent = __decorate([

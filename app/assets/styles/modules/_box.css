@@ -8,16 +8,23 @@ margin: 0 auto;
     img {
         opacity: 0.3;
         position: absolute;
-        top: 280px;
-        left: 50%;
+        top: 220px;
+        left: 40%;
         transform: translateX(-50%);
         width: 50%;
+        @mixin atXSmall {
+            left: 50%;
+        }
+        @mixin atSmall {
+            top: 280px;
+            width: 75%;
+        }
     }
 
     &__heading {
         position: absolute;
-        top: 295px;
-        left: 50%;
+        top: 235px;
+        left: 40%;
         transform: translateX(-50%);
         z-index: 100;
         h1 {
@@ -28,6 +35,12 @@ margin: 0 auto;
             margin: 0;
             font-size: 1.6rem;
             font-weight: 100;
+        }
+        @mixin atXSmall {
+            left: 50%;
+        }
+        @mixin atSmall {
+            top: 345px;
         }
         @mixin atLarge {
             display: none;

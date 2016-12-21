@@ -1,7 +1,27 @@
 .check {
-    width: 60px;
-    height: 60px;
-    background-color: #42de95;
-    border-radius: 30px;
-    content: "✓";
+    position: absolute;
+    left: -35px;
+    bottom: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 7px;
+    color: #fff;
+    text-align: center;
+    background: #42de95;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.1);
+    
+    @mixin atXSmall {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    @mixin atLarge {
+        left: -85px;
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+        bottom: 5px;     
+    }
 }

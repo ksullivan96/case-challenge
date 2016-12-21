@@ -12,6 +12,11 @@ var core_1 = require('@angular/core');
 var QuoteComponent = (function () {
     function QuoteComponent() {
     }
+    QuoteComponent.prototype.ngOnInit = function () {
+        this.checkOne = false;
+        this.checkTwo = false;
+    };
+    ;
     QuoteComponent.prototype.ngAfterViewInit = function () {
         $(".focus")
             .focusin(function () {
@@ -26,6 +31,17 @@ var QuoteComponent = (function () {
         });
     };
     ;
+    QuoteComponent.prototype.validateShipping = function () {
+        var validate = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
+        if (validate.test(this.shippingDate)) {
+            console.log("Correct format");
+            this.checkOne = true;
+        }
+        else {
+            console.log("Enter Correct format");
+            console.log(this.shippingDate);
+        }
+    };
     QuoteComponent = __decorate([
         core_1.Component({
             moduleId: module.id,

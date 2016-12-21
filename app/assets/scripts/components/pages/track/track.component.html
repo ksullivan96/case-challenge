@@ -16,30 +16,70 @@
                     </div>
                 </div>
                 <div *ngIf="isTracking">
-                    <div class="row">
+                    <div class="note-card__tracking-info">
                         <div class="row-12">
                             <h3>Package Information</h3>
                         </div>
+                            <div class="row-12">
+                                    <h3>Tracking Number: {{trackingNumber}}</h3>
+                            </div>
+                            <table class="table">
+                                <tr>
+                                    <div class="row-12">
+                                        <th>Shipping Progress</th>
+                                    </div>
+                                </tr>
+                                
+                                <tr>
+                                    <div class="row-6">
+                                        <th class="table__col-header">Location</th>
+                                    </div>
+                                    <div class="row-6">
+                                        <th class="table__col-header">Date</th>
+                                    </div>
+                                </tr>
+                                <div class="table__section-border">                                
+                                    <tr>
+                                        <ul>
+                                            <div class="row-12 table--c-row">
+                                                <li>Rogers, AR</li>
+                                                <li>12/01/2015</li>
+                                            </div>
+                                            <div class="row-12 table--c-row">
+                                                <li>Rogers, AR</li>
+                                                <li>12/01/2015</li>
+                                            </div>
+                                            <div class="row-12 table--c-row">
+                                                <li>Rogers, AR</li>
+                                                <li>12/01/2015</li>
+                                            </div>
+                                            <div class="row-12 table--c-row">
+                                                <li>Rogers, AR</li>
+                                                <li>12/01/2015</li>
+                                            </div>
+                                        </ul>
+                                    </tr>
+                                </div>
+                            </table>
+                            <table class="table">
+                                <tr>
+                                    <div class="row-12">
+                                        <th>Package Information</th>
+                                    </div>
+                                </tr>
+                                <div class="table__section-border">                                                                
+                                    <tr>
+                                        <div class="row-12">
+                                            <span><strong>Weight:</strong> 1.12lbs</span>                                        
+                                        </div>
+                                        <div class="row-12">
+                                            <span><strong>Type:</strong> Box</span>
+                                        </div>
+                                    </tr>
+                                </div>
+                            </table>
                     </div>
-                    <div class="row">
-                        <div class="row-12">
-                            <div class="row-12 note-card__tracking-info">
-                                <h3 class="note-card__heading-indent"> {{trackingNumber}}</h3>
-                                <h4>Shipping from: Arkansas </h4>
-                                <div class="row-12">
-                                    <h5>Shipping Process:</h5>
-                                </div>
-                                <div class="row-12">
-                                    <ul>
-                                        <div class="row-6">
-                                            <li>Location</li>
-                                        </div>
-                                        <div class="row-6">
-                                            <li>Date</li>
-                                        </div>
-                                    </ul>
-                                </div>
-                            </div>                                                         
+                        <div class="row-12">                                                       
                             <div class="wrapper wrapper__inner">
                                 <div class="wrapper__inner-container">
                                     <div class="loading-ring">
@@ -47,13 +87,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
-
                 <div class="row-12">
                     <a (click)="trackShipment()" [ngClass]="{'btn--next-large--track-submit': isSubmit }" class="btn btn--next btn--next-large btn--next-large--track">Track</a>
                 </div>
-
             </div>
         </div>
     </div>

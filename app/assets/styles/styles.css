@@ -10,11 +10,12 @@
 @import "modules/_site-header";
 @import "modules/_page-header";
 @import "modules/_wrapper";
-@import "modules/_note-card";
 @import "modules/_row";
+@import "modules/_note-card";
 @import "modules/_focus";
 @import "modules/_hover";
 @import "modules/_animation";
 @import "modules/_loading-ring";
 @import "modules/_check";
+@import "modules/_table";
 

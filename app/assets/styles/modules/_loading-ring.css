@@ -8,6 +8,5 @@
     animation: loadingRing 3s 1;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
-
-
+    margin-top: -80px;
 }

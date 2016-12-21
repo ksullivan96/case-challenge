@@ -7,9 +7,17 @@ declare var $: any;
   selector: 'quoute',
   templateUrl: 'quote.component.html',
 })
-export class QuoteComponent implements AfterViewInit { 
+export class QuoteComponent implements OnInit, AfterViewInit { 
+  shippingDate: any;
+  checkOne: boolean;
+  checkTwo: boolean;
   constructor() {
   }
+
+  ngOnInit() {
+    this.checkOne = false;
+    this.checkTwo = false;
+  };
   ngAfterViewInit() {
     $(".focus")
       .focusin(function () {
@@ -23,4 +31,14 @@ export class QuoteComponent implements AfterViewInit {
         $("div a").removeClass("btn--next-focus");
       });
     };
+    validateShipping() {
+      let validate = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
+      if (validate.test(this.shippingDate)) {
+        console.log("Correct format");
+        this.checkOne = true;
+      } else {
+        console.log("Enter Correct format");
+        console.log(this.shippingDate);
+      }
+    }
   }
